@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Calculator</title>
+  <script src="calculator.js"></script>
+  <script src="main.js"></script>
+  <script>
+    window.onload = function(){
+      showVersion();
+    }
+  </script>
+</head>
+<body>
+
+    Simple Calculator
+  <input type="text" onchange=calculate(this.value)>
+  <div>Result 
+  <span id="result">3</span>  
+  </div>
+<div class="version">version<span id='version'></span></div>
+
+</body>
+</html>
